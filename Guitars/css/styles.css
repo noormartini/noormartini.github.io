@@ -101,3 +101,31 @@ header{
     justify-content:left;
     color: beige;
   }
+
+  .electricpics{
+    flex-direction: row wrap;
+    display: grid;
+    background-color:rgba(192, 246, 151, 1);
+    justify-content: space-around;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .electricpics img {
+    width: 100%; /* Ensures images fill the grid cell width */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 200px; /* Adjust this value based on desired image size */
+    max-height: 200px; /* Adjust this value based on desired image size */
+    object-fit: cover; /* Ensures images cover the entire area of the grid cell without distortion */
+    display: block;
+    margin: 0 auto; /* Centers the image within its grid cell */
+  }
+
+  .guitarists {
+    flex-direction: column;
+    display: flex;
+    background-color:rgba(192, 246, 151, 1);
+    justify-content: space-around;
+    height: 200px;
+    width: 300px;
+    gap: 50px;
+  }
